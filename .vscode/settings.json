@@ -1,0 +1,19 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "npm.packageManager": "yarn",
+  "search.exclude": {
+		"**/node_modules": true,
+    ".next": true,
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.sortJSON": false
+  },
+  "[typescript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features",
+		"editor.formatOnSave": true,
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features",
+		"editor.formatOnSave": true,
+	},
+}
