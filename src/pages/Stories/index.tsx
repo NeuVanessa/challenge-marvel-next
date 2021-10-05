@@ -3,7 +3,7 @@ import { StoriesCards } from '../../components/StoriesCards';
 
 const Stories: NextPage = () => (
   <>
-  
+
     <div
       style={{
         display: 'flex',
