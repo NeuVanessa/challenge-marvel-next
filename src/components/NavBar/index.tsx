@@ -18,6 +18,6 @@ export const Navbar: React.FC = () => (
       <a>Séries</a>
     </Link>
 
-    <ContainerButton to="/Character">Informação</ContainerButton>
+
   </HeaderContainer>
 );
