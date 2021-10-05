@@ -1,7 +1,7 @@
 import React from 'next';
 import Link from 'next/link';
 
-import { HeaderContainer, ContainerButton } from './styles';
+import { HeaderContainer } from './styles';
 
 export const Navbar: React.FC = () => (
   <HeaderContainer>

@@ -16,6 +16,3 @@ export const HeaderContainer = styled.div`
   }
 `;
 
-export const ContainerButton = styled(Button)`
-  background-color: yellow;
-`;
