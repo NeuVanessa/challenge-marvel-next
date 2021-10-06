@@ -3,7 +3,7 @@
   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
 
   <a href="#">
-    <img alt="autor" src="https://img.shields.io/badge/feito%20por-Thiago%20Silva-%237519C1">
+    <img alt="autor" src="https://img.shields.io/badge/feito%20por-Vanessa%20Lopes-%237519C1">
   </a>
 </p>
 
