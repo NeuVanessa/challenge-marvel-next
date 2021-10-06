@@ -1,34 +1,106 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
 
-## Getting Started
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
 
-First, run the development server:
+  <a href="#">
+    <img alt="autor" src="https://img.shields.io/badge/feito%20por-Thiago%20Silva-%237519C1">
+  </a>
+</p>
+
+<h1 align="center">
+ Challenge Marvel NextJs
+</h1>
+<h3 align="center">
+	Stacks - (NextJs + Typescript + Material Ui + Styled-Components)
+</h3>
+<h4 align="center">
+	Acesse a demo:
+	<a href="">
+		Marvel Api
+	</a>
+</h4>
+
+## 💻 Sobre o projeto
+
+Challenge Marvel Next - é um projeto voltado a resgatar informação da API publica disponibilizada para os desenvolvedores utilizar:
+
+Como Base: https://gateway.marvel.com
+
+
+Projeto desenvolvido por X dias **Marvel Api** oferecida pela [Marvel](https://developer.marvel.com/), 
+O objetivos é pegar alguns enpoint e utilizar no FrontEnd.
+
+---
+## ⚙️ Funcionalidades
+
+- [x] Listagem de Personagens / Stories / Series
+- [x] Busca por Personagens
+---
+
+
+## 🚀 Como executar o projeto
+
+npm run dev
+### Pré-requisitos
+
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [NextJs](https://nextjs.org/docs).
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+
+#### 🧭 Rodando a aplicação
 
 ```bash
-npm run dev
-# or
-yarn dev
+
+# Clone este repositório
+$ git clone https://github.com/NeuVanessa/challenge-marvel-next.git
+
+# Acesse a pasta do projeto no seu terminal/cmd
+$ cd challenge-marvel-next
+
+# Instale as dependências (escolha um)
+$ npm install
+ou
+$ yarn install
+
+# Execute a aplicação em modo de desenvolvimento (escolha um)
+$ npm run dev
+$ yarn dev
+
+# A aplicação será aberta na porta:3000
+# acesse http://localhost:3000
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## 🛠 Tecnologias
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+As seguintes ferramentas foram usadas na construção do projeto:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+#### **Website**  ([NextJs](https://nextjs.org/) + [TypeScript](https://www.typescriptlang.org/) 
+#### **Estilo** 
+[Styled-Conponets](https://styled-components.com/)  +   + [Material UI](https://mui.com/))
+<br>
 
-## Learn More
+> Veja o arquivo  [package.json](https://github.com/NeuVanessa/challenge-marvel-next/blob/main/package.json)
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🦸 Autor
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<a href="https://twitch.tv/NeuTsukasa">
+ <img style="border-radius: 50%;" src="https://github.com/NeuVanessa.png" width="100px;" alt=""/>
+ <br />
+ <sub><b>Vanessa Lopes</b></sub>
+</a>
+<br />
 
-## Deploy on Vercel
+[![Linkedin Badge](https://img.shields.io/badge/-vanessalopes-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/vanessa-lopes-798077128/)](https://www.linkedin.com/in/vanessa-lopes-798077128/)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 📝 Licença
+
+Este projeto esta sobe a licença [MIT](./LICENSE).
+
+Feito com ❤️ por Vanessa Lopes 👋🏽
