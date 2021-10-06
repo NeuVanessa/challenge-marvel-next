@@ -9,17 +9,17 @@ const Search = ({ searched }) => {
   };
 
   return (
-    <div>
-      <form>
-        <input
-          type="text"
-          placeholder="Search your character"
-          autoFocus
-          onChange={(e) => onSearch(e.target.value)}
-          value={inputed}
-        />
-      </form>
-    </div>
+
+
+    <input
+      type="text"
+      placeholder="Search your character"
+      autoFocus
+      onChange={(e) => onSearch(e.target.value)}
+      value={inputed}
+    />
+
+
   );
 };
 

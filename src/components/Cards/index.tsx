@@ -11,7 +11,7 @@ import { api } from '../../services/api';
 // Types
 import { PersonagemType } from '../../pages/api/characters';
 //Styles
-import { CardSimple, MainContainer, Title } from './styles';
+import { CardSimple, MainContainer, Title, Search } from './styles';
 
 export const CardList: React.FC = () => {
   //Todos os personagens
@@ -59,41 +59,52 @@ export const CardList: React.FC = () => {
     );
   }
 
+  const handleChange = (e: { target: { value: string } }) => {
+    setSearch(e.target.value);
+  };
+
   return (
     <>
       <MainContainer>
         <>
           <Title variant="h6"> Listando todos os Personagens</Title>
         </>
-        <SearchInput searched={(q) => setSearch(q)}></SearchInput>
-        {characters.map((data, index) => {
-          return (
-            <CardSimple
-              key={index}
-              date={data.id}
-            //  updateData={setSearch}
-            >
-              <CardActionArea>
-                <CardMedia
-                  component="img"
-                  height="140"
-                  image={data.thumbnail}
-                  alt={data.name}
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
-                    {data.name}
-                  </Typography>
-                  {data.description.length > 0 && (
-                    <Typography variant="body2" color="text.secondary">
-                      {data.description}
-                    </Typography>
-                  )}
-                </CardContent>
-              </CardActionArea>
-            </CardSimple>
-          );
-        })}
+        <Search>
+          <input
+            onChange={handleChange}
+            placeholder="Digite o nome do personagem"
+          />
+          {characters.map((data) => {
+            if (
+              search == '' ||
+              data.name.toLowerCase().includes(search.toLowerCase())
+            ) {
+              return (
+                <CardSimple key={data.id}>
+                  <CardActionArea>
+                    <CardMedia
+                      component="img"
+                      height="140"
+                      image={data.thumbnail}
+                      alt={data.name}
+                    />
+                    <CardContent>
+                      <Typography gutterBottom variant="h5" component="div">
+                        {data.name}
+                      </Typography>
+                      {data.description.length > 0 && (
+                        <Typography variant="body2" color="text.secondary">
+                          {data.description}
+                        </Typography>
+                      )}
+                    </CardContent>
+                  </CardActionArea>
+                </CardSimple>
+              );
+            }
+            return null;
+          })}
+        </Search>
       </MainContainer>
     </>
   );
