@@ -5,29 +5,29 @@ import { apiMarvel } from '../../services/apiMarvel';
 
 
 //Criando os tipos de personagens
-export type PersonagemType = {
+export type SeriesType = {
   id: string;
-  name: string;
+  title: string;
   description: string;
   thumbnail: string;
 };
 
 //Criando um Export caso precise resgatar em determinado lugar
-export type PersonagensDataApi = Array<PersonagemType>;
+export type SeriesDataApi = Array<SeriesType>;
 
 //Usando o async function para trazer todos os characters da API em formato json
-const handler: NextApiHandler<PersonagensDataApi> = async (req, res) => {
+const handler: NextApiHandler<SeriesDataApi> = async (req, res) => {
   //criação do array characters
-  const characters = [] as PersonagemType[];
+  const series = [] as SeriesType[];
 
   //Try cath tem a função push que traz com ele todos os dados listados dentro do map
   try {
-    const { data } = await apiMarvel.get<any>(`/characters`);
+    const { data } = await apiMarvel.get<any>(`/series`);
 
     data.data.results.map((character: any) => {
-      characters.push({
+      series.push({
         id: String(character.id),
-        name: character.name,
+        title: character.title,
         description: character.description,
         thumbnail: `${character.thumbnail.path}.${character.thumbnail.extension}`,
       });
@@ -35,10 +35,10 @@ const handler: NextApiHandler<PersonagensDataApi> = async (req, res) => {
       return character;
     });
     //retornando o characters
-    return res.json(characters);
+    return res.json(series);
     // caso tenha algum erro na resposta retorna abaixo.
   } catch (error) {
-    return res.json(characters);
+    return res.json(series);
   }
 };
 

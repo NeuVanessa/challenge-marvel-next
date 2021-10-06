@@ -3,11 +3,13 @@ import Container from '@mui/material/Container';
 
 export const HeaderContainer = styled.div`
   display: flex;
-  background: #1f3042;
+  background: white;
+  border-radius: 5px;
   height: 50px;
   justify-content: space-between;
   align-items: center;
   padding: 35px;
+  margin-top: 10px;
 
   img {
 

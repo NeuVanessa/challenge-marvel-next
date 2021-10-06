@@ -9,35 +9,34 @@ import { Navbar } from '../NavBar/NavBarHome';
 import { api } from '../../services/api';
 
 // Types
-import { HistoriasType } from '../../pages/api/comics';
+import { SeriesType } from '../../pages/api/series';
 
 import { Search, Title } from './styles';
 
-export const StoriesCards: React.FC = () => {
-  const [comics, setComics] = useState<HistoriasType[]>([] as any);
+export const SeriesCard: React.FC = () => {
+  const [series, setSeries] = useState<SeriesType[]>([] as any);
 
   useEffect(() => {
-    api.get('/comics').then(({ data }) => {
-      setComics(data);
+    api.get('/series').then(({ data }) => {
+      setSeries(data);
     });
   }, []);
 
-  if (comics.length <= 0) {
-    return <>Carregando Histórias em Quadrinhos...</>;
+  if (series.length <= 0) {
+    return <>Carregando Séries ...</>;
   }
 
   return (
     <>
- <Navbar />
+      <Navbar />
       <>
-
-        <Title>Mostrado Histórias em Quadrinhos</Title>
+        <Title>Mostrado Séries </Title>
       </>
 
       <Search>
         {/* Colocado apenas para deixar o designer mais elegante */}
-        <input placeholder="Pesquise das suas histórias" />
-        {comics.map((comic) => (
+        <input placeholder="Pesquise suas séries" />
+        {series.map((comic) => (
           <Card
             key={comic.id}
             style={{

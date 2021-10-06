@@ -1,8 +1,8 @@
 import type { NextPage } from 'next';
-import { StoriesCards } from '../../components/StoriesCards';
+import { SeriesCard } from '../../components/SeriesCard';
 import Container from '@mui/material/Container';
 
-const Stories: NextPage = () => (
+const Series: NextPage = () => (
   <Container
     maxWidth="xl"
     style={{
@@ -21,9 +21,9 @@ const Stories: NextPage = () => (
           padding: '0 16px',
         }}
       >
-        <StoriesCards />
+        <SeriesCard />
       </Container>
     </>
   </Container>
 );
-export default Stories;
+export default Series;

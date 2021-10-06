@@ -1,6 +1,6 @@
 import React from 'next';
 import { HeaderContainer } from './styles';
-import { SimpleButtom } from '../Button';
+import { SimpleButtom } from '../../Button';
 import { MainContainer } from './styles';
 export const Navbar: React.FC = () => (
   <HeaderContainer>
@@ -9,11 +9,7 @@ export const Navbar: React.FC = () => (
       style={{ width: 80, height: 40, left: 20 }}
     />
     <MainContainer>
-      <SimpleButtom to="/">Inicio</SimpleButtom>
-      {"\n"}
-      <SimpleButtom to="/Stories">Histórias</SimpleButtom>
-      {"\n"}
-      <SimpleButtom to="/Series">Séries</SimpleButtom>
+      <SimpleButtom to="/">Voltar</SimpleButtom>
     </MainContainer>
   </HeaderContainer>
 );
