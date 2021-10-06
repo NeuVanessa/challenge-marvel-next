@@ -17,7 +17,7 @@ export const SeriesCard: React.FC = () => {
   const [series, setSeries] = useState<SeriesType[]>([] as any);
 
   useEffect(() => {
-    api.get('/series').then(({ data }) => {
+    api.get('/series').then(({ data  }) => {
       setSeries(data);
     });
   }, []);
