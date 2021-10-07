@@ -80,7 +80,7 @@ export const StoriesCards: React.FC = () => {
             padding: 30,
           }}
         >
-          <Title variant="h6">Listando todos os Personagens</Title>
+          <Title variant="h6">Listando todas as Histórias</Title>
 
           <Search>
             <input
