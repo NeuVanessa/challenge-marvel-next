@@ -81,7 +81,7 @@ export const SeriesCard: React.FC = () => {
             padding: 30,
           }}
         >
-          <Title variant="h6">Listando todos os Personagens</Title>
+          <Title variant="h6">Listando todas as Séries</Title>
 
           <Search>
             <input
