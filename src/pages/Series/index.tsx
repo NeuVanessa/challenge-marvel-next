@@ -1,29 +1,11 @@
 import type { NextPage } from 'next';
 import { SeriesCard } from '../../components/SeriesCard';
-import Container from '@mui/material/Container';
+import { Navbar } from '../../components/NavBar/NavBarHome';
 
 const Series: NextPage = () => (
-  <Container
-    maxWidth="xl"
-    style={{
-      backgroundColor: '#4F1D26',
-    }}
-  >
-    <>
-      <Container
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          maxWidth: '400px',
-          width: '100%',
-          margin: 'auto',
-          padding: '0 16px',
-        }}
-      >
-        <SeriesCard />
-      </Container>
-    </>
-  </Container>
+  <>
+   <Navbar/>
+    <SeriesCard />
+  </>
 );
 export default Series;

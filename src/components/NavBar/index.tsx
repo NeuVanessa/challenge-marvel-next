@@ -1,23 +1,31 @@
 import React from 'react';
 import { HeaderContainer } from './styles';
 import { SimpleButtom } from '../Button';
-import { MainContainer } from './styles';
-
+import { MainContainer, Images} from './styles';
+import PersonOutlineIcon from '@material-ui/icons/PersonOutline';
+import AddReactionIcon from '@material-ui/icons/AddAlertSharp';
+import MenuBookIcon from '@material-ui/icons/MenuBook';
 export const Navbar: React.FC = () => {
   return (
     <>
       <HeaderContainer>
-        {/* <img
-          src="https://logodownload.org/wp-content/uploads/2017/05/marvel-logo-4.png"
-          style={{ width: 80, height: 40, left: 20 }}
-        /> */}
+        <Images src="https://logodownload.org/wp-content/uploads/2017/05/marvel-logo-4.png" />
 
         <MainContainer>
-          <SimpleButtom to="/">Inicio</SimpleButtom>
+          <SimpleButtom to="/">
+            <PersonOutlineIcon />
+            Inicio
+          </SimpleButtom>
           {'\n'}
-          <SimpleButtom to="/Stories">Histórias</SimpleButtom>
+          <SimpleButtom to="/Stories">
+            <MenuBookIcon />
+            Histórias
+          </SimpleButtom>
           {'\n'}
-          <SimpleButtom to="/Series">Séries</SimpleButtom>
+          <SimpleButtom to="/Series">
+            <AddReactionIcon />
+            Séries
+          </SimpleButtom>
         </MainContainer>
       </HeaderContainer>
     </>

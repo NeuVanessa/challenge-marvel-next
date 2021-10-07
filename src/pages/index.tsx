@@ -1,16 +1,10 @@
 import type { NextPage } from 'next';
-import { Navbar } from '../components/NavBar';
 import { CardList } from '../components/Cards';
-import { CardContainer, MainContainer } from './styles';
-
+import { Navbar } from '../components/NavBar';
 const Home: NextPage = () => (
   <>
     <Navbar />
-    <MainContainer maxWidth="xl">
-      <CardContainer>
-        <CardList />
-      </CardContainer>
-    </MainContainer>
+    <CardList />
   </>
 );
 export default Home;

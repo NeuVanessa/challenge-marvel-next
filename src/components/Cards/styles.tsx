@@ -1,32 +1,40 @@
-import styleds from 'styled-components';
 import styled from '@emotion/styled';
-import CardMedia from '@mui/material/CardMedia';
+
+//Material Ui
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Card from '@mui/material/Card';
-export const CardImage = styled(CardMedia)``;
+import CardContent from '@mui/material/CardContent';
+
+export const ContentCard = styled(CardContent)``;
 export const CardSimple = styled(Card)`
   width: 100%;
   margin: 1.1rem 0;
 `;
 export const Title = styled(Typography)`
-  color: white;
-  margin: 20px;
+  position: relative;
+  color: #1f3042;
+  left: 50px;
 `;
-export const Search = styleds.div`
+
+export const Description = styled(Typography)`
+  color: white;
+`;
+export const Search = styled(Container)`
   min-width: 560px;
   display: flex;
   flex-direction: column;
   input {
     height: 50px;
-    width:68%;
+    width: 68%;
     padding: 20px 15px;
-    background: #1F3042;
+    background: #1f3042;
     border: none;
     border-radius: 20px;
     color: white;
     margin-bottom: 25px;
     transition: all 0.2s;
+    flex-direction: column;
     &::placeholder {
       color: #a9aaae;
     }
@@ -38,6 +46,27 @@ export const Search = styleds.div`
 `;
 export const MainContainer = styled(Container)`
   background: transparent;
+`;
 
+export const Cards = styled(Card)`
+  height: 300px;
+  width: 450px;
+  overflow: hidden;
+  margin: 30px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 30px 1 rgba(0, 0, 0, 0.3);
+  background-color: #7a1f30;
+`;
 
+export const Containers = styled(Container)`
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+`;
+export const CardLists = styled(Container)`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #ffffff;
 `;

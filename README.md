@@ -11,7 +11,7 @@
  Challenge Marvel NextJs
 </h1>
 <h3 align="center">
-	Stacks - (NextJs + Typescript + Material Ui + Styled-Components)
+	Stacks - (NextJs + Typescript + Material Ui)
 </h3>
 <h4 align="center">
 	Acesse a demo:
@@ -27,7 +27,7 @@ Challenge Marvel Next - é um projeto voltado a resgatar informação da API pub
 Como Base: https://gateway.marvel.com
 
 
-Projeto desenvolvido por X dias **Marvel Api** oferecida pela [Marvel](https://developer.marvel.com/), 
+Projeto desenvolvido por X dias **Marvel Api** oferecida pela [Marvel](https://developer.marvel.com/),
 O objetivos é pegar alguns enpoint e utilizar no FrontEnd.
 
 ---
@@ -77,9 +77,8 @@ $ yarn dev
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-#### **Website**  ([NextJs](https://nextjs.org/) + [TypeScript](https://www.typescriptlang.org/) 
-#### **Estilo** 
-[Styled-Conponets](https://styled-components.com/)  +   + [Material UI](https://mui.com/))
+#### **Website**  ([NextJs](https://nextjs.org/) + [TypeScript](https://www.typescriptlang.org/)
+#### **Estilo**  + [Material UI](https://mui.com/))
 <br>
 
 > Veja o arquivo  [package.json](https://github.com/NeuVanessa/challenge-marvel-next/blob/main/package.json)
